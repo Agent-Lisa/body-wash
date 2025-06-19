@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>body wash store menu</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item-name {
+            font-weight: bold;
+        }
+        .menu-item-price {
+            font-size: 18px;
+            color: #666;
+        }
+        .button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="menu-header">body wash store menu</h1>
+        <div class="menu-items">
+            <div class="menu-item">
+                <span class="menu-item-name">lavender dream</span>
+                <span class="menu-item-price">$8.99</span>
+                <button class="button">add to cart</button>
+            </div>
+            <div class="menu-item">
+                <span class="menu-item-name">citrus burst</span>
+                <span class="menu-item-price">$9.99</span>
+                <button class="button">add to cart</button>
+            </div>
+            <div class="menu-item">
+                <span class="menu-item-name">tea tree oil</span>
+                <span class="menu-item-price">$10.99</span>
+                <button class="button">add to cart</button>
+            </div>
+            <div class="menu-item">
+                <span class="menu-item-name">aloe vera gel</span>
+                <span class="menu-item-price">$12.99</span>
+                <button class="button">add to cart</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const buttons = document.queryselectorall('.button');
+        buttons.foreach(button => {
+            button.addeventlistener('click', () => {
+                alert('item added to cart!');
+            });
+        });
+    </script>
+</body>
+</html>
